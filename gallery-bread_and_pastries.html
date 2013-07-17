@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel = "stylesheet" type "text/css" href = "gallery-style.css">
+ </head>
+
+ <body>
+  <header>    
+    <div class = 'head'>
+      <div id = 'head-title'>
+        <img src="images/header/Title.png">
+      </div>
+      <div id = 'img'>
+        <img src="images/header/Facebook.png" class = 'icon'>      
+        <img src="images/header/Twitter.png" class = 'icon'>
+        <img src="images/header/Google+.png" class = 'icon'>
+        <img src="images/header/Tumblr.png" class = 'icon'>      
+      </div>
+    </div> 
+  </header>
+  
+  <div id='main'>
+   <article>
+    <div class='article-content'>
+     <img src="images/bnp1.jpg" alt="" id="rotator"></div>
+
+     <script type="text/javascript">
+     (function() {
+      var rotator = document.getElementById('rotator');
+      var imageDir = 'images/';
+      var delayInSeconds = 3; 
+      var images = ['bnp2.jpg', 'bnp3.jpg', 'bnp4.jpg', 'bnp1.jpg'];
+	  var num = 0;
+      var changeImage = function() {
+       var len = images.length;
+	   
+       rotator.src = imageDir + images[num++];
+       if (num == len) {
+        num = 0;
+       }
+      };
+      setInterval(changeImage, delayInSeconds * 1000);
+     })();
+     </script>
+   </article>
+	
+   <nav>
+	<div class = "content"><a href='index.html'>Home</a></div>
+    <div class = "content"><a href='about_us.html'>About</a></div>
+    <div class = "content"><a href='filipino_cuisine.html'>Filipino Cuisine</a></div>
+	<div class = "content"><a href='gallery.html'>Gallery</a></div>
+   </nav>
+	
+    <aside>
+	  <div class = "content"><a href='gallery.html'>All</a></div>
+	  <div class = "content"><a href='gallery-merienda.html'>Merienda</a></div>
+	  <div class = "content"><a href='gallery-pulutan.html'>Pulutan</a></div>
+	  <div class = "content"><a href='gallery-bread_and_pastries.html'>Bread and Pastries</a></div>
+	  <div class = "content"><a href='gallery-fiesta_food.html'>Fiesta Food</a></div>
+	  <div class = "content"><a href='gallery-desserts.html'>Desserts</a></div>
+	</aside>
+   </div>
+
+  <footer>
+    <div class = 'footer'>
+      <div class = 'footer-text'>
+        Copyright &copy; 2013. All Rights Reserved
+      </div>
+
+      <div id = 'logo'>
+        <img src="images/bg/logo.png">
+      </div>
+
+      <div class = 'footer-text'>
+        SALVADOR, John Dominic U. <br>
+        LOPEZ, Lee Christian V. <br><br>
+        ADVANCE WEB COMPUTING <br> 
+        ENGR. GINO TRIA <br>
+      </div>
+    </div></footer>
+ </body>
+</html>
